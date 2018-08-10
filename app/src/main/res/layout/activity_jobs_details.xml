@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_large"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="Job Title     : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@id/title"
+            android:text="Hosekeeping"
+            android:textColor="@color/black_full"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="Location     : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jobsLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@id/title"
+            android:text="Pazundaung"
+            android:textColor="@color/black_full"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="Payment     : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jobPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@id/title"
+            android:text="$ 2000"
+            android:textColor="@color/black_full"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payment"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="Period     : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jobPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payment"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@id/title"
+            android:text="300 hours"
+            android:textColor="@color/black_full"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/vacancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/period"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="Vacancy     : "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jobVacancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/period"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toRightOf="@id/title"
+            android:text="3 posts available"
+            android:textColor="@color/black_full"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vacancy"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="Job Description"
+            android:textColor="@color/black_full"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/jobDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="Maintains a clean,sanitary and safe health care environment by daily cleaning and supplying of room."
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/btnApplyJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@drawable/rounded_buttom"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="Apply Job"
+            android:textColor="@color/black_full"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

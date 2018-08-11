@@ -7,4 +7,10 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/appInvite"
+        android:icon="@drawable/ic_share_24dp"
+        android:title="AppInvite"
+        app:showAsAction="always" />
+
 </menu>

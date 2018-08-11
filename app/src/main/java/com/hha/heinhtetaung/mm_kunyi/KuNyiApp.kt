@@ -13,7 +13,7 @@ class KuNyiApp : Application() {
         val FIRE_BASE_CHILD: String = "kunyijobs"
         val JOBS_ID: String = "JOBS_ID"
         val FIRE_BASE_STORAGE: String = "gs://hha-mm-kunyi.appspot.com"
-
+        val RC_JOBS_FEED_LAYOUT = "jobs_feed_layout"
     }
 
     override fun onCreate() {

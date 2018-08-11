@@ -13,10 +13,16 @@ import com.hha.heinhtetaung.mm_kunyi.viewholders.JobsViewHolder
  */
 class JobsAdapter(context: Context,
                   private val mJobsItemDelegate: JobsItemDelegate) : BaseRecyclerAdapter<JobsViewHolder, JobsVO>(context) {
+
+    var mLayoutOption: Int = 0
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JobsViewHolder {
         val jobsItemView = mLayoutInflator.inflate(R.layout.item_jobs, parent, false)
         return JobsViewHolder(jobsItemView, mJobsItemDelegate)
     }
 
+    fun setNewsFeedLayout(layoutOption: Int) {
+        mLayoutOption = layoutOption
+        notifyDataSetChanged()
+    }
 
 }

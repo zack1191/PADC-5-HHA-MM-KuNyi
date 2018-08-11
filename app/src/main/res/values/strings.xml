@@ -4,4 +4,6 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="web_client_id">130670684119-jtnfpikbhol49u18c8vmgcibqgs7i3qf.apps.googleusercontent.com</string>
+    <string name="invitation_message">Be informed on jobs that suitable to myanmar people</string>
+    <string name="invitation_cta">I want to join</string>
 </resources>
